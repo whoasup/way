@@ -1,0 +1,30 @@
+:root {
+  // colors
+  --accent-basic: #fe7865;
+  --accent-hover: #f17d4b;
+  --dark-basic: #2c2e3f;
+  --dark-strong: #141517;
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --special-white: #fbf8f8;
+  --icon-grey: #d7d9df;
+  --modal-dark: #48494d;
+}
+
+
+$title-grey: rgba(#141517, 0.7);
+$text-grey: rgba(#2c2e3f, 0.7);
+$text-grey-light: rgba(#2c2e3f, 0.3);
+
+// screen width
+
+$small: 320px;
+$medium: 767px;
+$large: 1023px;
+
+$max-desktop: 1210px;
+
+// media
+
+$tablet: "only screen and (max-width: #{$large})";
+$mobile: "only screen and (max-width: #{$medium})";

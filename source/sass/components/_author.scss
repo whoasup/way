@@ -1,0 +1,27 @@
+// author
+
+.author {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  color: var(--dark-basic);
+  column-gap: 16px;
+
+  @media #{$mobile} {
+    flex-direction: column;
+
+    row-gap: 10px;
+  }
+}
+
+.author__image {
+  border-radius: 50%;
+}
+
+.author__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.466667px;
+}

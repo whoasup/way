@@ -1,0 +1,46 @@
+// journeys
+
+.journeys {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 10px;
+
+  @media #{$mobile} {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    row-gap: 17px;
+  }
+}
+
+.journeys__sublist {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  row-gap: 9px;
+}
+
+.journeys__subitem {
+  @media #{$mobile} {
+    min-width: 135px;
+
+    text-align: center;
+  }
+}
+
+.journeys__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  opacity: 0.5;
+}

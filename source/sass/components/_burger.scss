@@ -1,0 +1,48 @@
+.burger {
+  display: none;
+
+  @media #{$tablet} {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+    display: grid;
+    align-items: center;
+    width: 72px;
+    height: 100%;
+
+    background-color: var(--accent-basic);
+    border: none;
+    cursor: pointer;
+
+    grid-template-areas: "burger";
+    justify-items: center;
+
+    &--open {
+      background-color: var(--basic-white);
+    }
+
+    &:hover,
+    &:active {
+      background-color: var(--accent-hover);
+    }
+  }
+
+  @media #{$mobile} {
+    width: 50px;
+  }
+}
+
+.burger__icon {
+  grid-area: burger;
+}
+
+.burger__open,
+.burger--open .burger__close {
+  display: block;
+}
+
+.burger__close,
+.burger--open .burger__open {
+  display: none;
+}

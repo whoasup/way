@@ -1,0 +1,77 @@
+// field
+
+.field {
+  position: relative;
+
+  display: flex;
+  width: 100%;
+  padding-top: 16px;
+
+  &--required {
+    &::before {
+      content: "*";
+      position: absolute;
+      top: 22px;
+      left: 15px;
+
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 21px;
+      color: var(--accent-basic);
+    }
+  }
+
+  &--phone {
+    &::after {
+      content: "+7";
+      position: absolute;
+      top: 33px;
+      left: 27px;
+
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: var(--dark-strong);
+    }
+  }
+}
+
+.field--phone .field__input {
+  padding-left: 50px;
+}
+
+.field__input {
+  width: 100%;
+  padding: 15px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: inherit;
+
+  border: 1px solid rgba(44, 46, 63, 0.3);
+
+  &::placeholder {
+    color: inherit;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: var(--accent-basic);
+  }
+}
+
+.field__error {
+  position: absolute;
+  top: 0;
+
+  display: none;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--accent-basic);
+}
+
+.field__input:invalid:not(:placeholder-shown) ~ .field__error {
+  display: block;
+}

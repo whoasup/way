@@ -1,0 +1,33 @@
+// modal
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+
+  width: 100%;
+  max-width: 728px;
+
+  transform: translate(-50%, -50%);
+
+  @media #{$mobile} {
+    min-height: 100vh;
+  }
+
+  &--close {
+    display: none;
+  }
+}
+
+.modal__button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  display: flex;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+}

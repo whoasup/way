@@ -1,0 +1,35 @@
+// order
+
+.order__container {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: 50% 27%;
+
+  @media #{$tablet} {
+    background-image: unset;
+  }
+}
+
+.order__slider {
+  margin-bottom: 240px;
+
+  @media #{$tablet} {
+    margin-bottom: 82px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 45px;
+  }
+}
+
+.order__price {
+  margin-bottom: 140px;
+
+  @media #{$tablet} {
+    margin-bottom: 125px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 48px;
+  }
+}

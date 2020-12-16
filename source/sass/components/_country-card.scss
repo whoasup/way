@@ -1,0 +1,77 @@
+// country-card
+
+.country-card {
+  display: grid;
+
+  grid-template-areas: "card";
+}
+
+.country-card__figure {
+  display: grid;
+  margin: 0;
+
+  grid-area: card;
+  grid-template-areas: "country";
+}
+
+.country-card__image {
+  z-index: -1;
+
+  display: block;
+  width: 100%;
+
+  grid-area: country;
+}
+
+.country-card__image img {
+  display: block;
+  width: 100%;
+}
+
+.country-card__caption {
+  z-index: -1;
+
+  align-self: end;
+  width: 215px;
+  padding: 17px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: var(--dark-basic);
+  letter-spacing: -0.415px;
+
+  background-color: var(--basic-white);
+
+  grid-area: country;
+  justify-self: center;
+}
+
+.country-card__link {
+  z-index: 0;
+
+  display: none;
+  align-self: center;
+  padding: 30px 25px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  grid-area: card;
+  justify-self: center;
+}
+
+.country-card:hover .country-card__link {
+  display: block;
+}
+
+.country-card:hover .country-card__figure {
+  background: rgba(20, 21, 23, 0.6);
+}

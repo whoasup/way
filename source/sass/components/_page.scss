@@ -1,0 +1,11 @@
+.page {
+  font-family: "Montserrat", "Arial", sans-serif;
+  background-color: var(--basic-white);
+  color: var(--basic-dark);
+  font-style: normal;
+}
+
+.page__body {
+  min-width: $small;
+  position: relative;
+}

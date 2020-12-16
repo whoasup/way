@@ -1,0 +1,137 @@
+// places
+
+.places__container {
+  max-width: $max-desktop;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding-top: 200px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  color: var(--dark-basic);
+
+  @media #{$tablet} {
+    margin-bottom: 0;
+    padding: 80px;
+    padding-bottom: 85px;
+
+    text-align: center;
+  }
+
+  @media #{$mobile} {
+    padding-top: 105px;
+    padding-right: 16px;
+    padding-bottom: 25px;
+    padding-left: 16px;
+  }
+}
+
+.places__title {
+  max-width: 360px;
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.245px;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 228px;
+    height: 4px;
+    margin-top: 29px;
+
+    background-color: var(--accent-basic);
+  }
+
+  @media #{$tablet} {
+    max-width: unset;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: unset;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media #{$mobile} {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.places__text {
+  max-width: 328px;
+  margin-bottom: 54px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+
+  color: $text-grey;
+
+  @media #{$tablet} {
+    max-width: 343px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 20px;
+  }
+}
+
+.places__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  column-gap: 5%;
+
+  row-gap: 100px;
+
+  @media #{$tablet} {
+    row-gap: 20px;
+  }
+
+  @media #{$mobile} {
+    row-gap: 35px;
+  }
+}
+
+.places__item {
+  width: 30%;
+
+  &:last-of-type {
+    margin-left: 60px;
+  }
+
+  @media #{$tablet} {
+    width: 47.3%;
+
+    &:last-of-type {
+      margin-top: 10px;
+      margin-left: unset;
+    }
+  }
+
+  @media #{$mobile} {
+    width: 100%;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}

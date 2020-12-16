@@ -1,0 +1,25 @@
+// succes
+
+.succes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 444px;
+  padding: 164px;
+
+  background-color: var(--special-white);
+
+  @media #{$mobile} {
+    padding: 60px 20px;
+  }
+}
+
+.succes__text {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: center;
+  color: var(--modal-dark);
+}

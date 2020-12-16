@@ -1,0 +1,46 @@
+// header
+.header {
+  color: var(--dark-strong);
+
+  background-color: var(--basic-white);
+}
+
+.header__container {
+  display: grid;
+  align-items: center;
+  max-width: $max-desktop;
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+
+  grid-gap: 55px;
+  grid-template-columns: auto 1fr auto;
+
+  @media #{$tablet} {
+    position: relative;
+
+    padding-top: 18px;
+    padding-bottom: 11px;
+  }
+
+  @media #{$mobile} {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.header__menu {
+  justify-self: end;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__logo-image {
+  @media #{$tablet} {
+    width: 44px;
+  }
+}
