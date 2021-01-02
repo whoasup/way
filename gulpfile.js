@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var terser = require("gulp-terser");
 var del = require("del");
+var ghPages = require("gh-pages");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -109,5 +110,10 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+gulp.task("publish", function(cb) {
+  ghPages.publish("./build", cb)
+});
+
 gulp.task("build", gulp.series("clean", "copy", "css", "js", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
+gulp.task("deploy", gulp.series("build", "publish"));
